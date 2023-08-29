@@ -3,14 +3,11 @@ import Layout from '@theme/Layout';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './about.module.css';
-import useIsBrowser from '@docusaurus/useIsBrowser';
-import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
-import {interpolate} from '@docusaurus/Interpolate';
 
 function MyAbout() {
 
   const MyComponent = () => {
-    const message = interpolate('欢迎{firstName}', {firstName: '思达'});
+    const message = 123
     console.log(message)
     return <div>{/* ... */}</div>;
     // return <div>==</div>;

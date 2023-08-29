@@ -1,0 +1,14 @@
+{
+  "item.label.沧海拾珍": {
+    "message": "Docs",
+    "description": "Navbar item with label 沧海拾珍"
+  },
+  "item.label.流水账": {
+    "message": "blog",
+    "description": "Navbar item with label 流水账"
+  },
+  "item.label.关于": {
+    "message": "about",
+    "description": "Navbar item with label 关于"
+  }
+}
