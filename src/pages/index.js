@@ -3,26 +3,65 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HeroImg from '@site/static/img/Hero.jpg';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
+const svgList = [
+  {
+    title: 'github',
+    Svg: require('../../static/img/github.svg').default,
+    color: 'black',
+    link: 'https://github.com/iTomstudio',
+  },
+  {
+    title: 'wechat',
+    Svg: require('../../static/img/wechat.svg').default,
+    color: '#64dd17',
+    link: 'https://mp.weixin.qq.com/s/ytNsiyIjCb-URVLY90uSMw',
+  },
+]
+const Svg = ({ Svg, color, title, link }) => {
+  return (
+    <a href={link} target='_blank'>
+      <Svg className={styles.svg} style={{ fill: color }} />
+    </a>
+  )
+}
+
+function MyHero() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <div className={styles.myHeroContainer}>
+      <div className={styles.leftContainer}>
+        <h1 className={styles.leftContainer_h1}>
+          Always <br /> Ready to Code.
+        </h1>
+        <p className={styles.leftContainer_p}>
+          我是 Jerry,热爱计算机的一切,
+          <br />
+          我在这里记录知识。
+        </p>
+        <div className={styles.buttonContainer}>
+          <button className={styles.button}>
+            <a className={styles.hero_a} href='/'>
+              Click
+            </a>
+          </button>
+          <span className={styles.buttonLeftText}>
+            Get Started. <br /> 开启学习之旅.
+          </span>
+          <div className={styles.svgContainer}>
+            {svgList.map((item, index) => {
+              return <Svg {...item} key={item.title} />
+            })}
+          </div>
         </div>
       </div>
-    </header>
+      <div className={styles.rightContainer}>
+        <img src={HeroImg} alt='HeroImg' />
+      </div>
+    </div>
   );
 }
 
@@ -30,11 +69,10 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <MyHero />
       </main>
     </Layout>
   );
