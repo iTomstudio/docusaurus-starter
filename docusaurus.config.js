@@ -47,14 +47,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,13 +72,20 @@ const config = {
         defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
-    },
+      },
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
         content: `⭐️ 加油！ ${new Date().toISOString().split('T')[0]} 今天又是带劲的一天 ⭐ `,
         // isCloseable: false, // 是否可关闭
-    },
+      },
+      algolia:{
+        appId: 'EQ3XVT2R1P',
+        apiKey: 'fe337886ed8f8eddb3a507248916aa84',
+        indexName: 'blog',
+        contextualSearch: true,
+      },
       navbar: {
+        hideOnScroll: true,
         title: 'Jerry',
         logo: {
           alt: 'My Site Logo',
@@ -93,12 +100,13 @@ const config = {
           },
           {to: '/blog', label: '流水账', position: 'left'},
           {to: '/about', label: '关于', position: 'left'},
+          {to: '/test', label: 'test', position: 'left'},
           {
             type: 'localeDropdown',
-            position: 'left',
+            position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/iTomstudio',
             label: 'GitHub',
             position: 'right',
           },

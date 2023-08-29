@@ -44,7 +44,7 @@ function MyHero() {
         </p>
         <div className={styles.buttonContainer}>
           <button className={styles.button}>
-            <a className={styles.hero_a} href='/'>
+            <a className={styles.hero_a} href='/docs/intro'>
               Click
             </a>
           </button>
