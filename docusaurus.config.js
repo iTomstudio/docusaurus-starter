@@ -28,8 +28,13 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: ['en', 'zh-CN'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+    }
   },
 
   presets: [
@@ -84,10 +89,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '沧海拾珍',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/about', label: 'about', position: 'left'},
+          {to: '/blog', label: '流水账', position: 'left'},
+          {to: '/about', label: '关于', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
