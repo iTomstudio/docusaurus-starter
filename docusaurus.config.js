@@ -78,6 +78,12 @@ const config = {
         content: `⭐️ 加油！ ${new Date().toISOString().split('T')[0]} 今天又是带劲的一天 ⭐ `,
         // isCloseable: false, // 是否可关闭
       },
+      sitemap: {
+        changefreq: 'weekly',
+        priority: 0.5,
+        // ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
       algolia:{
         appId: 'EQ3XVT2R1P',
         apiKey: 'fe337886ed8f8eddb3a507248916aa84',
