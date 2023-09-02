@@ -108,7 +108,7 @@ const config = {
           {to: '/about', label: '关于', position: 'left'},
           {to: '/test', label: 'test', position: 'left'},
           {to: '/test2', label: 'test2', position: 'left'},
-          {to: '/donate', label: '投喂', position: 'right'},
+          // {to: '/donate', label: '投喂', position: 'right'},
           {
             type: 'localeDropdown',
             position: 'right',
