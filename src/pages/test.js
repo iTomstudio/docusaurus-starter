@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Layout from '@theme/Layout';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './about.module.css';
 
 function MyAbout() {
 
@@ -20,6 +19,16 @@ function MyAbout() {
   );
 }
 
+// 然后在你的组件中使用 Bootstrap 样式和组件
+function MyComponent() {
+  return (
+    <div className="container">
+      <h1>使用 Bootstrap 的组件</h1>
+      <button className="btn btn-primary">按钮1</button>
+    </div>
+  );
+}
+
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -29,6 +38,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <main>
         <MyAbout />
+        <MyComponent />
       </main>
     </Layout>
   );

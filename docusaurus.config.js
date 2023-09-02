@@ -87,7 +87,7 @@ const config = {
       algolia:{
         appId: 'EQ3XVT2R1P',
         apiKey: 'fe337886ed8f8eddb3a507248916aa84',
-        indexName: 'blog',
+        indexName: 'docusaurus-2',
         contextualSearch: true,
       },
       navbar: {
@@ -107,6 +107,7 @@ const config = {
           {to: '/blog', label: '流水账', position: 'left'},
           {to: '/about', label: '关于', position: 'left'},
           {to: '/test', label: 'test', position: 'left'},
+          {to: '/donate', label: '投喂', position: 'right'},
           {
             type: 'localeDropdown',
             position: 'right',
