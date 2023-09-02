@@ -11,7 +11,7 @@ const svgList = [
   {
     title: 'github',
     Svg: require('../../static/img/github.svg').default,
-    color: 'black',
+    color: 'gray',
     link: 'https://github.com/iTomstudio',
   },
   {

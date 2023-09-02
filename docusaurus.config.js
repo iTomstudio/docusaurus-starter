@@ -107,6 +107,7 @@ const config = {
           {to: '/blog', label: '流水账', position: 'left'},
           {to: '/about', label: '关于', position: 'left'},
           {to: '/test', label: 'test', position: 'left'},
+          {to: '/test2', label: 'test2', position: 'left'},
           {to: '/donate', label: '投喂', position: 'right'},
           {
             type: 'localeDropdown',
