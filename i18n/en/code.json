@@ -1,1 +1,14 @@
-{}
+{
+  "homepage.hero.index1": {
+    "message": "I am Jerry, passionate about everything related to computers.",
+    "description": "index 1"
+  },
+  "homepage.hero.index2": {
+    "message": "I am here to document knowledge.",
+    "description": "index 2"
+  },
+  "homepage.hero.index3": {
+    "message": "Embark on a journey of learning.",
+    "description": "index 2"
+  }
+}

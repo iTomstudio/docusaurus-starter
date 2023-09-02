@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HeroImg from '@site/static/img/Hero.jpg';
+import Translate from '@docusaurus/Translate'
 
 import styles from './index.module.css';
 
@@ -38,9 +39,13 @@ function MyHero() {
           Always <br /> Ready to Code.
         </h1>
         <p className={styles.leftContainer_p}>
-          我是 Jerry,热爱计算机的一切,
-          <br />
-          我在这里记录知识。
+          <Translate id="homepage.hero.index1">
+            我是 Jerry,热爱计算机的一切,
+          </Translate>
+            <br />
+          <Translate id="homepage.hero.index2">
+            我在这里记录知识。
+          </Translate>
         </p>
         <div className={styles.buttonContainer}>
           <button className={styles.button}>
@@ -49,7 +54,7 @@ function MyHero() {
             </a>
           </button>
           <span className={styles.buttonLeftText}>
-            Get Started. <br /> 开启学习之旅.
+            Get Started. <br /> <Translate id="homepage.hero.index3">开启学习之旅.</Translate>
           </span>
           <div className={styles.svgContainer}>
             {svgList.map((item, index) => {
