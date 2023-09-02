@@ -59,6 +59,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        // https://analytics.google.com/analytics/web/
+        gtag: {
+          trackingID: 'G-G1GCNRCP1T',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -132,7 +137,7 @@ const config = {
         links: [
           
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}, Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.<br>Powered by <a>Jerry.</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()}, Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.<br>Powered by <a href="/resume">Jerry.</a>`,
       },
       prism: {
         theme: lightCodeTheme,

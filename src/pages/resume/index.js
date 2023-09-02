@@ -25,7 +25,7 @@ function MyAbout() {
   return (
     <main id="main" ref={mainRef} hidden={true}>
       <div className={styles.aboutHeader}>
-        <h2 className="border-0 border-b-4 border-solid border-success">关于本站</h2>
+        <h2 >Jerry 自我介绍</h2>
       </div>
       <div className={styles.about}>
         <div>
@@ -35,40 +35,36 @@ function MyAbout() {
           />
         </div>
         <div className={styles.aboutText}>
-          <h2>Hello World🏚️</h2>
+          <h2>Hello 👋</h2>
           <p>
-            欢迎来到 Jerry 的数字花园镜像站！
-            <br />
-            主站为：
-            <Link
-              to="https://note.jerry21.top/">
-              Jerry 数字花园 🌏
-            </Link>
-            <br />
-            数字花园是我的知识库，记录我感兴趣的内容，以及个人感悟。
+          我是 Jerry, 一名程序员👨‍💻.
+          <br />
+          (本科范围内)数学小能手🔢，计算机知识爱好者，动物保护主义。
+          <br />
+          喜欢学习计算机、编程知识。
+          <br />
+          <br />
+          目前就职于北京的一家互联网公司™️，从事🐍python业务代码的开发。
+          <br />
+          <br />
+          <h3>
+            热爱探索
+          </h3>
+          🚀探索、求知。在我看来，探索是一件非常有乐趣的事情。
+          <br />
+          <br />
+          💻workflow 是：收集网络资料，应用学习
+          <br />
+          并使用Obsidian记录双链笔记，在数字花园中记录，在实践中应用，乐此不疲。
+          <br />
+          我的目标是：<strong>让乐趣最大化🏖️</strong>。
+          <br />
+          <br />
+          <h3>
+            知识管理爱好者
+          </h3>
+          因为平时接触大量知识，所以要对它们进行记录。
           </p>
-          <p>
-            🚀 我是 Jerry（ <Link to="resume"> 👨‍💻Jerry的自我介绍 </Link>），欢迎一起交流～
-          </p>
-          <p>
-            🌏 本站主要包含如下主题：
-          </p>
-          <p>
-            工作与生活🏖️
-          </p>
-          <p>
-            🎒 * <a href="https://note.jerry21.top/todo-list/jerry-2023/">Jerry的2023</a> 2023 年工作生活的碎碎念( 流水账日记 )
-          </p>
-          <p>
-            🏝️资料收集
-          </p>
-          <p>
-            互联网上的高价值资料浩如烟海 收录在<a href="https://note.jerry21.top/web-folder/">沧海拾珍</a>内的一系子专题中。
-          </p>
-          <p>
-            ## 本站点🌐
-          </p>
-          
         </div>
       </div>
     </main>
@@ -80,7 +76,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="关于"
+      title="个人简介"
       description="Description will go into a meta tag in <head />">
       <main>
         <MyAbout />
