@@ -37,38 +37,43 @@ function MyAbout() {
         <div className={styles.aboutText}>
           <h2>Hello World🏚️</h2>
           <p>
-            欢迎来到 Jerry 的数字花园镜像站！
+            欢迎来到 Jerry 的数字花园👓镜像站！
             <br />
-            主站为：
+            🌏主站为：
             <Link
               to="https://note.jerry21.top/">
-              Jerry 数字花园 🌏
+              Jerry 数字花园 
             </Link>
             <br />
             数字花园是我的知识库，记录我感兴趣的内容，以及个人感悟。
           </p>
           <p>
-            🚀 我是 Jerry（ <Link to="resume"> 👨‍💻Jerry的自我介绍 </Link>），欢迎一起交流～
+            👨‍💻我是 <Link to="resume">Jerry</Link>，欢迎一起交流～
           </p>
+          <h3>镜像站介绍</h3>
           <p>
-            🌏 本站主要包含如下主题：
+           🐳镜像站同步主站全部内容：
           </p>
-          <p>
+          <h5>
             工作与生活🏖️
-          </p>
+          </h5>
           <p>
-            🎒 * <a href="https://note.jerry21.top/todo-list/jerry-2023/">Jerry的2023</a> 2023 年工作生活的碎碎念( 流水账日记 )
+            🌅 * <Link to="blog">流水账</Link> ：2023 年工作生活的碎碎念( 流水账日记 )
           </p>
+          <h5>
+            资料收集🏝️
+          </h5>
           <p>
-            🏝️资料收集
+            🚀 互联网上的高价值资料浩如烟海 收录在<Link to="/docs/intro">沧海拾珍</Link> 内的一系子专题中。
           </p>
-          <p>
-            互联网上的高价值资料浩如烟海 收录在<a href="https://note.jerry21.top/web-folder/">沧海拾珍</a>内的一系子专题中。
-          </p>
-          <p>
-            ## 本站点🌐
-          </p>
-          
+          <h3>
+            镜像站存在的意义📌
+          </h3>
+          <ul>
+            <li>主站专注于写内容，但受限于框架主题导致展示内容受限</li>
+            <li>通过Docusaurus.可以学习react,并通过js语言博客页面完全自主可控</li>
+            <li>可以集成一些比较有意思的页面or工具</li>
+          </ul>
         </div>
       </div>
     </main>

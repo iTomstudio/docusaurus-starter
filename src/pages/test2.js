@@ -6,7 +6,7 @@ function TestPage() {
   return (
     <Layout>
       <Alert message= "Success Text" type = "success" />
-    </Layout>
+      </Layout>
   )
 }
 

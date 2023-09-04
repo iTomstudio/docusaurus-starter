@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './about.module.css';
+import styles from '../about/about.module.css';
 
 
 function MyAbout() {

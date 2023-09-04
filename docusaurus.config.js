@@ -67,7 +67,17 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "other",
+        path: "other",
+        routeBasePath: "other",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -80,7 +90,7 @@ const config = {
       },
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `⭐️ 加油！ ${new Date().toISOString().split('T')[0]} 今天又是带劲的一天 ⭐ `,
+        content: `⭐️ 加油！ 今天又是带劲的一天 ⭐ `,
         // isCloseable: false, // 是否可关闭
       },
       sitemap: {
@@ -94,6 +104,9 @@ const config = {
         apiKey: 'fe337886ed8f8eddb3a507248916aa84',
         indexName: 'docusaurus-2',
         contextualSearch: true,
+      },
+      sidebar: {
+        autoCollapseCategories: true,
       },
       navbar: {
         hideOnScroll: true,
@@ -113,7 +126,20 @@ const config = {
           {to: '/about', label: '关于', position: 'left'},
           {to: '/test', label: 'test', position: 'left'},
           {to: '/test2', label: 'test2', position: 'left'},
-          // {to: '/donate', label: '投喂', position: 'right'},
+          {
+            label: '其他', 
+            position: 'right',
+            items:[
+              {
+                label: "chatGPT",
+                to: "/other/chat",
+              },
+              {
+                label: "投喂",
+                to: "/other/donate",
+              },
+            ]
+          },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -130,7 +156,7 @@ const config = {
         logo: {
           alt: 'Meta 开源图标',
           src: '/img/buildwith.png',
-          href: 'https://docusaurus.io/zh-CN/',
+          href: 'https://www.docusaurus.cn/',
           width: 160,
           height: 51,
         },
