@@ -120,22 +120,23 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '沧海拾珍',
+            label: '🏞️沧海拾珍',
           },
-          {to: '/blog', label: '流水账', position: 'left'},
-          {to: '/about', label: '关于', position: 'left'},
-          {to: '/test', label: 'test', position: 'left'},
-          {to: '/test2', label: 'test2', position: 'left'},
+          {to: '/blog', label: '📝流水账', position: 'left'},
+          {to: '/soup', label: '☣️毒鸡汤', position: 'left'},
+          {to: '/about', label: '✨关于', position: 'left'},
+          {to: '/test', label: '🐞test', position: 'left'},
+          {to: '/test2', label: '🐞test2', position: 'left'},
           {
-            label: '其他', 
+            label: '🎇其他', 
             position: 'right',
             items:[
               {
-                label: "chatGPT",
+                label: "🤖chatGPT",
                 to: "/other/chat",
               },
               {
-                label: "投喂",
+                label: "🍒投喂",
                 to: "/other/donate",
               },
             ]

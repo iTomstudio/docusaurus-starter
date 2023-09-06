@@ -6,8 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 function MyAbout() {
 
   const MyComponent = () => {
-    const message = 123
-    console.log(message)
+    // const message = 123
+    // console.log(message)
     return <div>{/* ... */}</div>;
     // return <div>==</div>;
     // return <div>{isBrowser ? 'Client' : 'Server'}</div>;
