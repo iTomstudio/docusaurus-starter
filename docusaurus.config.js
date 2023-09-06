@@ -127,8 +127,9 @@ const config = {
           {to: '/about', label: '✨关于', position: 'left'},
           {to: '/test', label: '🐞test', position: 'left'},
           {to: '/test2', label: '🐞test2', position: 'left'},
+          {to: '/timeline', label: '时间线', position: 'left'},
           {
-            label: '🎇其他', 
+            label: '🪁其他', 
             position: 'right',
             items:[
               {

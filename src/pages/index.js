@@ -49,12 +49,12 @@ function MyHero() {
         </p>
         <div className={styles.buttonContainer}>
           <button className={styles.button}>
-            <a className={styles.hero_a} href='/docs/intro'>
+            <a className={styles.hero_a} href='/soup'>
               Click
             </a>
           </button>
           <span className={styles.buttonLeftText}>
-            Get Started. <br /> <Translate id="homepage.hero.index3">开启学习之旅.</Translate>
+            Get Started. <br /> <Translate id="homepage.hero.index3">先来一碗鸡汤.</Translate>
           </span>
           <div className={styles.svgContainer}>
             {svgList.map((item, index) => {

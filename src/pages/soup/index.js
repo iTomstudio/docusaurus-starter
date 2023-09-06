@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from '@theme/Layout';
 import { Spin, Button } from 'antd';
+import styles from './soup.module.css';
 
 
 function Soup() {
@@ -8,7 +9,7 @@ function Soup() {
   const [loading, setLoading] = useState(true);
 
   const fetchSoup = () => {
-    // setLoading(true);
+    setLoading(true);
     fetch("https://74dhw2gr3m.us.aircode.run/soup", {method: "GET"})
       .then(response => {
         return response.json();
@@ -17,7 +18,6 @@ function Soup() {
         // console.log(data); 
         setSoupText(data.data.title)
         setLoading(false);
-
       })
       .catch(error => console.log(error));
   };
@@ -29,7 +29,7 @@ function Soup() {
   return (
     <div >
       <div className="row">
-        <div className="col col--4" style={{ display: 'block', margin: 'auto', marginTop: '2%' }}> 
+        <div className={`col col--4 ${styles.soupMiddle}`} > 
           <div className="card-demo">
             <div className="card shadow--md">
               <div className="card__header">

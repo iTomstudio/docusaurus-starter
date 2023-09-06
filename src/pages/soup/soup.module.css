@@ -1,0 +1,12 @@
+.soupMiddle {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  width: 100%;
+}
+
+@media screen and (max-width: 966px) {
+  .soupMiddle {
+    margin-top: 14%;
+  }
+}
