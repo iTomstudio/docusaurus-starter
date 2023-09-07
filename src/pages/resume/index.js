@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Layout from '@theme/Layout';
-import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from '../about/about.module.css';
@@ -31,7 +30,7 @@ function MyAbout() {
         <div>
           <img
             className={styles.aboutProfilePic}
-            src={useBaseUrl("img/tom.png")}
+            src={useBaseUrl("img/weChat.png")}
           />
         </div>
         <div className={styles.aboutText}>

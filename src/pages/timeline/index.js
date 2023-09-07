@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Layout from '@theme/Layout';
-import { ConfigProvider, Space, Timeline } from 'antd';
+import { ConfigProvider, Space, Timeline, Checkbox } from 'antd';
 import { SmileOutlined } from '@ant-design/icons';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -53,20 +53,28 @@ function MyAbout() {
               mode={'left'}
               items={[
                 {
+                  color: 'rgba(0, 204, 255, 0.5)',
+                  dot: <SmileOutlined />,
+                  label: '2023-08-28',
+                  children: '本站初始化...',
+                },
+                {
+                  label: '2023-08-29',
+                  children: 'Algolia 搜索功能',
+                },
+                {
                   color: 'green',
-                  label: '2015-09-01',
-                  children: 'Create a services site ',
+                  label: '2023-08-30',
+                  children: 'i18n 仅首页国际化',
+                },
+                {
+                  label: '2023-09-05',
+                  children: '毒鸡汤',
                 },
                 {
                   color: 'red',
-                  label: '2015-09-01',
-                  children: 'Solve initial network problems ',
-                },
-                {
-                  color: 'rgba(0, 204, 255, 0.5)',
-                  dot: <SmileOutlined />,
-                  label: '2015-09-01',
-                  children: 'Technical testing ',
+                  label: '待做',
+                  children: <div><Checkbox checked={false}>留言模块</Checkbox><Checkbox checked={false}>评论模块</Checkbox><Checkbox checked={false}>打赏模块</Checkbox></div>,
                 },
               ]}
             />
