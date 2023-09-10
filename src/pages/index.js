@@ -1,6 +1,6 @@
 import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import { Popconfirm } from 'antd';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HeroImg from '@site/static/img/Hero.jpg';
@@ -23,11 +23,37 @@ const svgList = [
   },
 ]
 const Svg = ({ Svg, color, title, link }) => {
-  return (
-    <a href={link} target='_blank'>
-      <Svg className={styles.svg} style={{ fill: color }} />
-    </a>
-  )
+  // return (
+  //   <a href={link} target='_blank'>
+  //     <Svg className={styles.svg} style={{ fill: color }} />
+  //   </a>
+  // )
+  // 定制化主页svg点击动作
+  const confirm = (e) => {
+    window.open('https://github.com/iTomstudio');
+
+  };
+  if (title === 'github') {
+    // 在这里编写 title 为 'github' 时的逻辑
+    return (  
+      <Popconfirm
+        title="github 社区"
+        description="是否了解该网站存在的网络问题?"
+        onConfirm={confirm}
+        okText="前往"
+        cancelText="取消"
+      >
+        <Svg className={styles.svg} style={{ fill: color }} />
+      </Popconfirm>
+    )
+  } else if (title === 'wechat') {
+    // 在这里编写 title 为 'wechat' 时的逻辑
+    return (
+      <Link to="resume"><Svg className={styles.svg} style={{ fill: color }}/></Link>
+    )
+  } else {
+    // 在这里编写其他 title 值时的逻辑
+  }
 }
 
 function MyHero() {

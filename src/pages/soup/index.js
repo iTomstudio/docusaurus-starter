@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from '@theme/Layout';
-import { Spin, Button } from 'antd';
+import { Spin, Button, Tag } from 'antd';
 import styles from './soup.module.css';
 
 
@@ -45,6 +45,7 @@ function Soup() {
               <div className="card__footer">
                 <Button type="primary" shape="round" size="large" style={{ display: 'block', margin: 'auto' }} onClick={fetchSoup}>再来一碗</Button>
               </div>
+              <Tag>接口有点慢，可能等待 2 秒</Tag>
             </div>
           </div>
         </div>

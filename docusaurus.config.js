@@ -158,6 +158,7 @@ const config = {
           alt: 'Meta 开源图标',
           src: '/img/buildwith.png',
           href: 'https://www.docusaurus.cn/',
+          target: '_blank',
           width: 160,
           height: 51,
         },
