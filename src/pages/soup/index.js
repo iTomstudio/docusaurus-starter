@@ -45,7 +45,7 @@ function Soup() {
               <div className="card__footer">
                 <Button type="primary" shape="round" size="large" style={{ display: 'block', margin: 'auto' }} onClick={fetchSoup}>再来一碗</Button>
               </div>
-              <Tag>接口有点慢，可能等待 2 秒</Tag>
+              <Tag>接口有点慢，初次可能等待 5 秒，后续为 2 秒</Tag>
             </div>
           </div>
         </div>

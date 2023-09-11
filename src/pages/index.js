@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HeroImg from '@site/static/img/Hero.jpg';
 import Translate from '@docusaurus/Translate'
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
@@ -104,6 +105,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <main>
         <MyHero />
+        <HomepageFeatures />
       </main>
     </Layout>
   );
