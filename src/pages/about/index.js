@@ -73,10 +73,14 @@ function MyAbout() {
             <li>主站专注于写内容，但受限于框架主题导致展示内容受限</li>
             <li>通过Docusaurus.可以学习react,并通过js语言博客页面完全自主可控</li>
             <li>可以集成一些比较有意思的页面or工具</li>
+            <li>主站所有转跳为a标签，刷新页面很慢，现代前端语言页面内局部重新渲染很快</li>
             <li><Link to="/timeline">⏰建站时间线</Link></li>
           </ul>
+          <Link to="/thanks"><h3>🎀鸣谢页</h3></Link>
         </div>
       </div>
+      <div id="tcomment">12</div>
+
     </main>
   );
 }

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from "react";
 import Link from '@docusaurus/Link';
-import { Popconfirm } from 'antd';
+import { Button, Popconfirm } from 'antd';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HeroImg from '@site/static/img/Hero.jpg';
@@ -58,7 +58,11 @@ const Svg = ({ Svg, color, title, link }) => {
 }
 
 function MyHero() {
-  const {siteConfig} = useDocusaurusContext();
+  const [loading, setLoading] = useState(false);
+  const onClick = () => {
+    setLoading(true);
+  };
+  
   return (
     <div className={styles.myHeroContainer}>
       <div className={styles.leftContainer}>
@@ -75,6 +79,9 @@ function MyHero() {
           </Translate>
         </p>
         <div className={styles.buttonContainer}>
+          <Button className={styles.button} size={"large"} loading={loading} onClick={onClick}>
+            <Link className={styles.hero_a} >Click</Link>
+          </Button>
           <button className={styles.button}>
             <a className={styles.hero_a} href='/soup'>
               Click

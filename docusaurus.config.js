@@ -105,6 +105,11 @@ const config = {
         indexName: 'docusaurus-2',
         contextualSearch: true,
       },
+      twikoo: {
+        // 在Twikoo官网注册并获取到的实例配置信息
+        envId: 'https://cifar.zeabur.app',
+        el: '#tcomment', 
+      },
       sidebar: {
         autoCollapseCategories: true,
       },
@@ -172,6 +177,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/twikoo@1.6.20/dist/twikoo.all.min.js',
+      async: true,
+    },
+    {
+      src: 'https://jumami.zeabur.app/script.js',
+      async: true,
+      defer: true,
+      'data-website-id': 'e94a7915-a334-4067-a5fb-ee1bacb135f2',
+    },
+  ],
 };
 
 module.exports = config;
