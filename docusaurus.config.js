@@ -46,15 +46,15 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
+          // editUrl:
+          //   'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
+          // editUrl:
+          //   'https://github.com/iTomstudio/docusaurus-starter/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -127,7 +127,7 @@ const config = {
             position: 'left',
             label: '🏞️沧海拾珍',
           },
-          {to: '/blog', label: '📝流水账', position: 'left'},
+          // {to: '/blog', label: '📝流水账', position: 'left'},
           {to: '/soup', label: '☣️毒鸡汤', position: 'left'},
           {to: '/about', label: '✨关于', position: 'left'},
           {to: '/test', label: '🐞test', position: 'left'},
@@ -150,11 +150,11 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://github.com/iTomstudio',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/iTomstudio',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -186,7 +186,7 @@ const config = {
       src: 'https://jumami.zeabur.app/script.js',
       async: true,
       defer: true,
-      'data-website-id': 'e94a7915-a334-4067-a5fb-ee1bacb135f2',
+      'data-website-id': 'ac4d461e-286b-4d1c-94d9-ee199390bdf3',
     },
   ],
 };

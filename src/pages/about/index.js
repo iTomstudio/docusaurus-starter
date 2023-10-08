@@ -39,11 +39,11 @@ function MyAbout() {
           <p>
             欢迎来到 Jerry 的数字花园👓镜像站！
             <br />
-            🌏主站为：
+            {/* 🌏主站为：
             <Link
               to="https://note.jerry21.top/">
               Jerry 数字花园 
-            </Link>
+            </Link> */}
             <br />
             数字花园是我的知识库，记录我感兴趣的内容，以及个人感悟。
           </p>
@@ -58,7 +58,7 @@ function MyAbout() {
             工作与生活🏖️
           </h5>
           <p>
-            🌅 * <Link to="blog">流水账</Link> ：2023 年工作生活的碎碎念( 流水账日记 )
+            🌅 * <Link to="">流水账</Link> ：2023 年工作生活的碎碎念( 流水账日记 )
           </p>
           <h5>
             资料收集🏝️

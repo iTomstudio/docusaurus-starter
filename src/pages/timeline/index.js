@@ -74,7 +74,7 @@ function MyAbout() {
                 {
                   color: 'red',
                   label: '待做',
-                  children: <div><Checkbox checked={false}>留言模块</Checkbox><Checkbox checked={false}>评论模块</Checkbox><Checkbox checked={false}>打赏模块</Checkbox></div>,
+                  children: <div><Checkbox checked={false}>留言模块</Checkbox><Checkbox checked={false}>评论模块</Checkbox><Checkbox checked={false}>投喂模块</Checkbox></div>,
                 },
               ]}
             />

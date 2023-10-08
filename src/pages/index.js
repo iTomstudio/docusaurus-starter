@@ -31,8 +31,7 @@ const Svg = ({ Svg, color, title, link }) => {
   // )
   // 定制化主页svg点击动作
   const confirm = (e) => {
-    window.open('https://github.com/iTomstudio');
-
+    window.open('https://github.com/');
   };
   if (title === 'github') {
     // 在这里编写 title 为 'github' 时的逻辑
