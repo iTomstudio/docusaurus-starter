@@ -2,6 +2,7 @@
 sidebar_position: 9
 title: web3
 ---
+
 就像小白入门投资一样，开始肯定按保守性格，买稳定增长的产品。
 所以web3不要上来就被论坛里的各种数字收藏品冲昏头脑。
 
@@ -27,7 +28,9 @@ title: web3
 - 代币标准
 	- [ERC-20 代币 - ETH](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 	- [ERC-721 数字收藏品 - NFT](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
-
+- 收集所有区块链(BlockChain)技术开发相关资料 [awesome-blockchain-cn](https://github.com/chaozh/awesome-blockchain-cn)
+- [web3.0知识整理](https://github.com/wangschang/web3.0)
+- [Web 3.0通识课](https://j08v3n7cqq.feishu.cn/wiki/FWvxwnoJgiyDvck6W8pc19xKnUg)
 ### 智能合约编程
 ##### 教程
 - [智能合约简介](https://ethereum.org/zh/developers/docs/smart-contracts/)
@@ -36,7 +39,14 @@ title: web3
 ##### 编码
 - [通过编码来学习](https://ethereum.org/zh/developers/learning-tools/)
 	- 学习Solidity，开发您自己的僵尸游戏。[CryptoZombies](https://cryptozombies.io/)
+		- cryptozomebie 课程代码 [cryptozombies-lesson-code](https://github.com/CryptozombiesHQ/cryptozombies-lesson-code)
 	- 比特猫  [cryptokitties](https://www.cryptokitties.co/)
 
 ### 工作机会
 - [abetterweb3](https://abetterweb3.notion.site/)
+
+### 全球工作
+- [全球在线远程工作招聘信息网站](https://www.ahhhhfs.com/48657/)       [官网](https://freshremote.work/)
+- [Hacker News远程招聘信息](https://www.ahhhhfs.com/52726/)
+- [华人海外求职招聘](https://runlala.com/)
+- 

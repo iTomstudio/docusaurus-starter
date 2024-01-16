@@ -13,3 +13,5 @@ sidebar_label: 目录
 - [新事物](/docs/new_knowledge)
 - [学习方法](/docs/methods)
 - [语言](/docs/language)
+- [生活](/docs/life)
+- [书单](/docs/book)
